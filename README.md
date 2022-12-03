@@ -17,3 +17,8 @@ export default defineConfig({
 })
 ```
 
+使用 npx eslint --init
+
+
+
+yarn add -D prettier eslint-plugin-prettier eslint-config-prettier
