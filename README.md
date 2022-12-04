@@ -22,3 +22,20 @@ export default defineConfig({
 
 
 yarn add -D prettier eslint-plugin-prettier eslint-config-prettier
+
+
+
+npx mrm@2 lint-staged
+
+
+
+yarn add -D vitepress
+
+
+
+TypeError: dns.setDefaultResultOrder is not a function
+
+原因 Node 版本太低，安装 Node v17 就可以了
+
+
+
