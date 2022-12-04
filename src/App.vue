@@ -3,13 +3,16 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue'
 import Test from './components/Test'
+const confirm = () => {
+  console.log('确认')
+}
 </script>
 
 <template>
   <div>
-    <c-button type="primary" size="large">确定</c-button>
-    <c-button type="primary" size="medium">确定</c-button>
-    <c-button type="primary" size="small">确定</c-button>
+    <c-button type="primary" size="large" block>确定</c-button>
+    <c-button type="primary" size="medium" @click="confirm">确定</c-button>
+    <c-button type="primary" size="small" disabled @click="confirm">确定</c-button>
     <c-button>取消</c-button>
     <Test />
     <a href="https://vitejs.dev" target="_blank">
