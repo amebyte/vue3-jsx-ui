@@ -7,7 +7,8 @@ import Test from './components/Test'
 
 <template>
   <div>
-    <CButton></CButton>
+    <c-button type="primary">确定</c-button>
+    <c-button>取消</c-button>
     <Test />
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
