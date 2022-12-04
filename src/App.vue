@@ -7,6 +7,7 @@ import Test from './components/Test'
 
 <template>
   <div>
+    <CButton></CButton>
     <Test />
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
