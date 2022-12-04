@@ -4,10 +4,10 @@ export default defineComponent({
     name: 'CButton',
     props: buttonProps,
     setup(props: ButtonProps, { slots }) {
-        const { type } = toRefs(props)
+        const { type, size } = toRefs(props)
         return () => {
             const defaultSlot = slots.default ? slots.default() : '按钮'
-            return <button class={`c-btn c-btn--${type.value}`}>{defaultSlot}</button>
+            return <button class={`c-btn c-btn--${type.value} c-btn--${size.value}`}>{defaultSlot}</button>
         }
     }
 })

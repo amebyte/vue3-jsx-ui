@@ -1,10 +1,12 @@
-@use './button-type.scss';
+@use './button-config.scss';
 @import './button-base.scss';
 
 .c-btn {
     @include button-base;
 
-    @include button-variant(button-type.$type);
+    @include button-variant(button-config.$type);
 
-    @include button-variant(button-type.$pseudo, true)
+    @include button-variant(button-config.$size);
+
+    @include button-variant(button-config.$pseudo, true)
 }

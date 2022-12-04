@@ -7,7 +7,9 @@ import Test from './components/Test'
 
 <template>
   <div>
-    <c-button type="primary">确定</c-button>
+    <c-button type="primary" size="large">确定</c-button>
+    <c-button type="primary" size="medium">确定</c-button>
+    <c-button type="primary" size="small">确定</c-button>
     <c-button>取消</c-button>
     <Test />
     <a href="https://vitejs.dev" target="_blank">
